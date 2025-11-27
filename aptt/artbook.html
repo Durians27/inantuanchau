@@ -636,6 +636,9 @@
                             <li><a href="to-roi.html">In Tờ Rơi</a></li>
                             <li><a href="artbook.html">In Artbook</a></li>
                             <li><a href="folder.html">In Folder</a></li>
+                            <li><a href="standee.html">In Standee</a></li>
+                            <li><a href="hashtag.html">In Hashtag - Formex</a></li>
+                            <li><a href="backdrop.html">In Backdrop - Hiflex</a></li>
                         </ul>
                     </li>
                     <li><a href="../tem/tem.html">Tem Nhãn Decal</a>
@@ -797,7 +800,7 @@
                     </div>
                 </a>
                 <a href="../apvp/in-photobook.html" class="related-box">
-                    <img src="../image/photobook.jpg" alt="In Photobook">
+                    <img src="../image/photobook.png" alt="In Photobook">
                     <div class="related-overlay">
                         <h3>In Photobook</h3>
                         <span class="details-button">Xem chi tiết</span>
@@ -823,7 +826,6 @@
                     </div>
                     <h3>IN ẤN TUẤN CHÂU</h3>
                     <ul class="contact-list">
-                        corral
                         <li><i class="fas fa-map-marker-alt"></i><span>24 D5, Phường 25, Bình Thạnh, Tp.HCM</span></li>
                         <li><i class="fas fa-phone"></i><span><a href="tel:+84902544948">0902 544 948</a></span></li>
                         <li><i class="fas fa-phone"></i><span><a href="tel:+84968229972">0968 229 972</a></span></li>
@@ -867,7 +869,7 @@
         <a href="tel:+84902544948" class="contact-button phone-call" title="Gọi Ngay Hotline">
             <i class="fas fa-phone-alt"></i>
         </a>
-        <a href="https://www.facebook.com/your-facebook-page" target="_blank" class="contact-button" title="Liên hệ qua Facebook">
+        <a href="https://www.facebook.com/nhainbinhthanh" target="_blank" class="contact-button" title="Liên hệ qua Facebook">
             <i class="fab fa-facebook-f"></i>
         </a>
         <a href="https://zalo.me/0968229972" target="_blank" class="contact-button" title="Liên hệ qua Zalo">
@@ -880,22 +882,6 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Tab functionality
-            const tabs = document.querySelectorAll('.tab-button');
-            const contents = document.querySelectorAll('.tab-content');
-
-            tabs.forEach(tab => {
-                tab.addEventListener('click', () => {
-                    const targetId = tab.getAttribute('data-tab');
-
-                    tabs.forEach(t => t.classList.remove('active'));
-                    contents.forEach(c => c.classList.remove('active'));
-
-                    tab.classList.add('active');
-                    document.getElementById(targetId).classList.add('active');
-                });
-            });
-
             // Hamburger menu toggle
             const hamburger = document.querySelector('.hamburger');
             const navList = document.querySelector('.nav-list');
