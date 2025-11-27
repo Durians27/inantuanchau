@@ -666,11 +666,14 @@
                             <li><a href="../aptt/to-roi.html">In Tờ Rơi</a></li>
                             <li><a href="../aptt/artbook.html">In Artbook</a></li>
                             <li><a href="../aptt/folder.html">In Folder</a></li>
+                            <li><a href="../aptt/standee.html">In Standee</a></li>
+                            <li><a href="../aptt/hashtag.html">In Hashtag - Formex</a></li>
+                            <li><a href="../aptt/backdrop.html">In Backdrop - Hiflex</a></li>
                         </ul>
                     </li>
                     <li><a href="../tem/tem.html">Tem Nhãn Decal</a>
                         <ul class="sub-menu">
-                            <li><a href="../tem/tem-">In Tem Giấy</a></li>
+                            <li><a href="../tem/tem-giay.html">In Tem Giấy</a></li>
                             <li><a href="../tem/tem-krack.html">In Tem Krack</a></li>
                             <li><a href="../tem/tem-mau.html">In Tem 7 Màu</a></li>
                             <li><a href="../tem/tem-nhua.html">In Tem Nhựa</a></li>
@@ -847,7 +850,7 @@
         </section>
     </main>
 
-    <footer class id="lien he">
+    <footer class="cdw-footer" id="lien he">
         <div class="container">
             <div class="footer-cols">
                 <div class="footer-col">
@@ -912,30 +915,25 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Tab functionality
             const tabs = document.querySelectorAll('.tab-button');
             const contents = document.querySelectorAll('.tab-content');
 
             tabs.forEach(tab => {
                 tab.addEventListener('click', () => {
                     const targetId = tab.getAttribute('data-tab');
-
                     tabs.forEach(t => t.classList.remove('active'));
                     contents.forEach(c => c.classList.remove('active'));
-
                     tab.classList.add('active');
                     document.getElementById(targetId).classList.add('active');
                 });
             });
 
-            // Hamburger menu toggle
             const hamburger = document.querySelector('.hamburger');
             const navList = document.querySelector('.nav-list');
             hamburger.addEventListener('click', () => {
                 navList.classList.toggle('active');
             });
 
-            // Tự động ẩn menu khi click vào một liên kết trên mobile
             navList.querySelectorAll('a').forEach(item => {
                 item.addEventListener('click', () => {
                     if (window.innerWidth <= 768) {
